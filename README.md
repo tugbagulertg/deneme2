@@ -2,4 +2,4 @@
 
 ## Alt Bilgi
 
-[lorem ipsum](www.google.com)
+[lorem ipsum](http://google.com)
