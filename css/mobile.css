@@ -1,0 +1,217 @@
+#main-nav .container {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+#main-nav ul,
+#main-nav a {
+  justify-self: center !important;
+}
+
+@media (max-width: 600px) {
+  #header .header-container,
+  #about .about-container,
+  #education .education-container,
+  #experience .experience-container,
+  #contact .contact-container {
+    grid-template-columns: 1fr;
+  }
+  #main-nav .container ul li a {
+    padding: 0.4rem 1.2rem;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  #header::before {
+    content: "";
+    background: url("../image/pexels-eberhard-grossgasteiger-844297.jpg")
+      no-repeat;
+    background-position: left;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background-attachment: fixed;
+  }
+  #header .header-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 60vh;
+    align-items: center;
+    justify-items: center;
+  }
+
+  #header {
+    z-index: -1;
+    margin: 10px 20px 0;
+    top: 0;
+  }
+  #header .header-content h1 {
+    margin: 1.4rem auto;
+    font-weight: 500;
+    font-size: 4rem;
+    letter-spacing: 0.6rem;
+    text-align: center;
+  }
+  #header .header-content p {
+    margin: auto;
+    font-size: 2.4rem;
+    font-weight: 300;
+    letter-spacing: 0.8rem;
+    text-align: center;
+  }
+  /* jl */
+  .about-header,
+  .item1,
+  .item3 {
+    align-self: center;
+    padding: 1.2rem;
+    margin-top: 3.5rem;
+  }
+  .about-header h2,
+  .item1 h2,
+  .item3 h2 {
+    letter-spacing: 0.6rem;
+    line-height: 1.4rem;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .about-content,
+  .item2,
+  .item4 {
+    align-self: bottom;
+    justify-self: center;
+    padding: 2rem 0;
+  }
+  .about-content p,
+  .item2 p,
+  .item4 p {
+    font-size: 1.7rem;
+    letter-spacing: 0.2rem;
+    line-height: 2.2rem;
+    text-align: center;
+  }
+  .item2 h3,
+  .item4 h3 {
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 0.6rem;
+    text-align: center;
+  }
+  /* contact */
+  .contact-img {
+    padding: 1.4rem 0.8rem 0.4rem;
+    justify-self: center;
+    align-self: center;
+  }
+  .contact .contact-container {
+    grid-gap: 0;
+  }
+
+  .contact-img img {
+    width: 250px;
+    opacity: 0.9;
+    box-shadow: 4px 3px 5px rgb(248, 201, 194, 0.4);
+    border-radius: 2%;
+  }
+  .contact-form {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    width: 100%;
+    height: auto;
+  }
+  .contact-form label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: rgb(29, 14, 9);
+  }
+  .contact-form input {
+    width: 100%;
+    padding: 0;
+    height: 2rem;
+    background: rgb(248, 227, 220, 0.1);
+    border: 1px solid rgb(153, 151, 151);
+    border-radius: 3px;
+  }
+  .contact-form .form-control button {
+    display: block;
+    color: #fff;
+    background: rgb(187, 90, 58);
+    border: none;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-top: 1.8rem;
+    font-size: 1.5rem;
+  }
+  .contact-brand {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: rgb(29, 14, 9);
+    border-bottom: 1px solid gray;
+    padding: 1rem 0;
+    justify-content: center;
+    align-content: center;
+  }
+  .contact-brand h2 {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 500;
+  }
+
+  .form-control {
+    padding-left: 1rem;
+  }
+  /* background */
+  .background-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: url(/image/pexels-teona-swift-6913376.jpg);
+    top: 0;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+  }
+  /* footer */
+  .main-footer .social a i {
+    color: #fff;
+    font-size: 2.2rem;
+    padding-top: 0.8rem;
+  }
+
+  .main-footer p {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #fff;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
